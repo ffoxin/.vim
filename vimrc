@@ -1,4 +1,7 @@
 filetype on
+filetype plugin on
+filetype indent on
+
 syntax on
 colorscheme Tomorrow-Night
 
@@ -38,4 +41,10 @@ execute pathogen#infect()
 set laststatus=2
 " show git changes
 let g:gitgutter_sign_column_always=1
+
+" enable tabs for makefiles
+let _curfile = expand("%:t")
+if _curfile =~ "Makefile" || _curfile =~ "makefile" || _curfile =~ ".*\.mk"
+  set noexpandtab
+endif
 
