@@ -8,6 +8,8 @@ colorscheme Tomorrow-Night
 set guifont=Menlo\ Regular:h18
 set colorcolumn=120
 set number
+set encoding=utf-8
+set fileencoding=utf-8
 
 " reload config
 map <leader>s :source ~/.vimrc<CR>
