@@ -1,9 +1,12 @@
-[submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
-[submodule "bundle/supertab"]
-	path = bundle/supertab
+[submodule "nerdtree"]
+	path = pack/plugins/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "supertab"]
+	path = pack/plugins/start/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "bundle/vim-gitgutter"]
-	path = bundle/vim-gitgutter
+[submodule "vim-airline"]
+	path = pack/plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim-gitgutter"]
+	path = pack/plugins/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
