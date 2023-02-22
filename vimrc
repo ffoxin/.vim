@@ -39,14 +39,22 @@ nnoremap <silent> <CR> :noh<CR>
 " show matching parenthesis
 set showmatch
 
+" Plugin: nerdtree
 " Start NERDTree. If a file is specified, move the cursor to its window.
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
-" enable airline
-set laststatus=2
+" Plugin: vim-airline
+" There is a pause when leaving insert mode
+set ttimeoutlen=10
+" The powerline font symbols are not showing up
+let g:airline_powerline_fonts = 1
+" remove those angle at the end
+let g:airline_skip_empty_sections = 1
+
+" Plugin: vim-gitgutter
 " show git changes
 let g:gitgutter_sign_column_always=1
 
